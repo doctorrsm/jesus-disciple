@@ -1,0 +1,84 @@
+.bibleVerse {
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: #C84B31;
+    user-select: auto;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    font-size: initial;
+  }
+
+.bibleVerse sup {
+    color: #C84B31;
+}
+  
+  .verseTooltip {
+      box-sizing: border-box;
+    position: absolute;
+    padding: 10px;
+    width: 400px;
+      color: #2D4263;
+    max-width: 90vw;
+    height: auto;
+    background: #ECDBBA;
+    left: 0;
+    top: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+     z-index: 3;
+
+  }
+
+.verseTooltip h3{
+    margin-top: 0;
+    padding-right: 20px;
+    border-bottom: 1px solid palevioletred;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.625rem;
+    /*user-select: none;*/
+}
+
+
+
+.verseTooltip p {
+    margin: -10px;
+    cursor: default;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+
+
+}
+
+.close-button {
+    border: 1px solid;
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 4px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
+    color: gray;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.close-button::before {
+
+    content: "x";
+    margin-top: -4px;
+}
+
+ .close-button:hover {
+    opacity: .7;
+
+}
